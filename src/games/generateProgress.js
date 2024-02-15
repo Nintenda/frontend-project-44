@@ -1,7 +1,7 @@
-const generateArithmeticProgression = (n, a1, difference) => {
+const generateArithmeticProgression = (progressionLength, firstElement, difference) => {
   const progression = [];
-  for (let i = 0; i < n; i += 1) {
-    progression.push(a1 + i * difference);
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(firstElement + i * difference);
   }
   return progression;
 };
